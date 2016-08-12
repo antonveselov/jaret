@@ -1,6 +1,6 @@
-addpath('../LibJPEG/Common')
-addpath('../LibJPEG/Encoder')
-addpath('../LibJPEG/Decoder')
+addpath('./LibJPEG/Common')
+addpath('./LibJPEG/Encoder')
+addpath('./LibJPEG/Decoder')
 
 p = Bootstrap
 
@@ -65,6 +65,6 @@ end
 
 delete('tmp.jpg')
 
-rmpath('../LibJPEG/Common')
-rmpath('../LibJPEG/Encoder')
-rmpath('../LibJPEG/Decoder')
+rmpath('./LibJPEG/Common')
+rmpath('./LibJPEG/Encoder')
+rmpath('./LibJPEG/Decoder')
