@@ -2,13 +2,13 @@ addpath('./LibJPEG/Common')
 addpath('./LibJPEG/Encoder')
 addpath('./LibJPEG/Decoder')
 
-p = Bootstrap
+p = Bootstrap;
 
 images = {...
-    './Benchmark/lena.bmp'
-    './Benchmark/airplane.bmp'
-    './Benchmark/baboon.bmp'
-    './Benchmark/peppers.bmp'
+    './Benchmark/Images/lena.bmp'
+    './Benchmark/Images/airplane.bmp'
+    './Benchmark/Images/baboon.bmp'
+    './Benchmark/Images/peppers.bmp'
     };
 
 for image_no = 1 : length(images)
@@ -20,7 +20,7 @@ for image_no = 1 : length(images)
     p.depth = length(image);
     
     ind = 0;
-    quality = 0:5:100;
+    quality = 1:5:100;
     psnr = zeros(length(quality), 1);
     rate = zeros(length(quality), 1);
     psnr_ref = zeros(length(quality), 1);
